@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>T9 Haircuts Booking</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f7f7f7; }
+    .booking-widget { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .booking-widget h2 { text-align: center; margin-bottom: 20px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    select, input { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+    button { margin-top: 20px; width: 100%; padding: 10px; background: #4267B2; color: white; border: none; border-radius: 5px; font-size: 16px; }
+    .confirmation { margin-top: 15px; background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; display: none; }
+  </style>
+</head>
+<body>
+  <div class="booking-widget">
+    <h2>Book a Haircut</h2>
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" required min="" />
+
+    <label for="time">Select Time:</label>
+    <select id="time"></select>
+
+    <label for="type">Client Type:</label>
+    <select id="type">
+      <option value="Adult">Adult - $35</option>
+      <option value="Senior">Senior - $31</option>
+      <option value="Child">Child - $28</option>
+    </select>
+
+    <button onclick="bookAppointment()">Book Now</button>
+    <div class="confirmation" id="confirmation"></div>
+  </div>
+
+  <script>
+    const timeSelect = document.getElementById('time');
+    const dateInput = document.getElementById('date');
+    const confirmation = document.getElementById('confirmation');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute("min", today);
+
+    function generateTimeSlots() {
+      timeSelect.innerHTML = '';
+      for (let h = 9; h < 16; h++) {
+        for (let m = 0; m < 60; m += 30) {
+          let hh = String(h).padStart(2, '0');
+          let mm = String(m).padStart(2, '0');
+          timeSelect.innerHTML += `<option value="\${hh}:\${mm}">\${hh}:\${mm}</option>`;
+        }
+      }
+    }
+
+    function isClosedDay(dateStr) {
+      const date = new Date(dateStr);
+      const day = date.getDay();
+      return day === 1;
+    }
+
+    async function bookAppointment() {
+      const date = dateInput.value;
+      const time = timeSelect.value;
+      const type = document.getElementById('type').value;
+
+      if (!date || !time) return alert("Please select a date and time.");
+      if (isClosedDay(date)) return alert("Sorry, we're closed on Mondays.");
+
+      const res = await fetch('/api/book', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ date, time, type })
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        confirmation.style.display = "block";
+        confirmation.innerHTML = `✅ Booking confirmed for a <strong>\${type}</strong> on <strong>\${date}</strong> at <strong>\${time}</strong>.`;
+      } else {
+        alert(data.message);
+      }
+    }
+
+    generateTimeSlots();
+  </script>
+</body>
+</html>
