@@ -33,7 +33,7 @@ In the Page's **Edit details / Page setup** section:
 | Field | What to enter |
 |---|---|
 | Website | `https://sweetasbox.co.nz` (add it once your Shopify store is live) |
-| Email | Your business email. A free Gmail like sweetasboxnz@gmail.com is fine |
+| Email | `sweetasboxnz@gmail.com` |
 | Phone | Optional. Leave it blank if you don't want calls |
 | Location / Address | **Don't add your home address.** Choose "No physical location" or set service area to **New Zealand** |
 | Hours | "Always open" (it's an online shop) |
