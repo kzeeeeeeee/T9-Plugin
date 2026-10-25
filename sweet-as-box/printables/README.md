@@ -11,6 +11,8 @@ Two cards go in every box: the **Kiwi Christmas Bingo** card and the **gift mess
 | `bingo-card-classic-140x198.pdf` | One card per page (A, back, B, back, C, back). Use this for Canva or a print shop |
 | `bingo-card-mini-100x141.pdf` | Same as above at the Mini size |
 | `message-card-100x70.pdf` | One message card (front, back). Use this for Canva or a print shop |
+| `makers-card-print-sheet-A4.pdf` | **Print at home: "Meet the makers" cards.** 8 per A4 (100×70mm). Page 1 is fronts, page 2 is backs |
+| `makers-card-100x70.pdf` | One "Meet the makers" card (front, back). Use this for Canva or a print shop |
 | `preview-*.png` | Pictures of each card, for checking or for social media posts |
 
 There are **three different bingo cards (A, B and C)** with the squares in a different order, so a whole family can
@@ -31,6 +33,9 @@ The back of the bingo card says:
 - **@sweetasbox**: change it to your real Instagram handle.
 - **Code MATE10 for 10% off**: create this discount code in Shopify (Discounts → Create discount → Amount off order),
   or change the text to the code you actually use.
+
+The "Meet the makers" card has **[Roaster name], [Town]** and **[Maker name], [Town]** as placeholders.
+Fill them in once your suppliers confirm, and ask each maker to share a photo of the card. It's free advertising for both of you.
 
 ## Editing in Canva
 1. On the Canva homepage, select **Upload** and choose `bingo-card-classic-140x198.pdf` (or `message-card-100x70.pdf`).
