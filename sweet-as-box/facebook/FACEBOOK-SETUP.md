@@ -40,8 +40,7 @@ In the Page's **Edit details / Page setup** section:
 | Price range | $$ |
 
 ## Step 4: Username (your Page web address)
-Settings → **Username**. Try in this order: `sweetasbox` → `sweetasboxnz` → `sweetasbox.nz`.
-Use the **same name as your Instagram** if possible, and update the @handle on your cards and posts to match.
+Settings → **Username**: `sweetasboxnz`, the **same as your Instagram (@sweetasboxnz)**. If it's taken, try `sweetasbox.nz`.
 
 ## Step 5: Action button
 Click **Add action button**:

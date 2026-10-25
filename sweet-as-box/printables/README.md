@@ -30,7 +30,7 @@ play together. Each one uses 24 of 30 Kiwi Christmas moments.
 
 ## Before you print: check these placeholders
 The back of the bingo card says:
-- **@sweetasbox**: change it to your real Instagram handle.
+- **@sweetasboxnz**: your Instagram handle (already filled in).
 - **Code MATE10 for 10% off**: create this discount code in Shopify (Discounts → Create discount → Amount off order),
   or change the text to the code you actually use.
 

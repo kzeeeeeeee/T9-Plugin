@@ -4,7 +4,7 @@
 on Instagram and Facebook at the same time. Each caption below is ready to copy and paste.
 
 **Before you post:**
-- Change **@sweetasbox** if your handle is different. It also appears on posts 1, 6 and 9.
+- Your handle **@sweetasboxnz** is already on posts 1, 6 and 9.
 - Check the prices ($35 Mini, $59 Classic), the box contents and the business-order deadline (5 Dec) still match
   your plan.
 - Check the last-order dates on post 9 against **NZ Post's 2026 Christmas sending dates** once they're published.
