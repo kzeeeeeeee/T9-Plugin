@@ -23,8 +23,9 @@ look for the same name nearby.
 
 ## Step 2: Add your pictures
 1. **Profile picture:** upload `sweet-as-box-instagram-profile.png`. Facebook shows it as a circle, and the lolly is centred for that.
-2. **Cover photo:** upload `sweet-as-box-facebook-cover.png`. Phones crop the sides off, so the logo and text are
-   all in the middle where every screen shows them. See `cover-crop-check.png`.
+2. **Cover photo:** upload `sweet-as-box-facebook-cover.png`. Facebook places your round profile picture over the
+   **bottom-centre** of the cover, so the logo and text sit in the top half and the bottom-centre is left clear.
+   Phones also crop the sides. `cover-crop-check.png` shows both.
 
 ## Step 3: Details
 In the Page's **Edit details / Page setup** section:
