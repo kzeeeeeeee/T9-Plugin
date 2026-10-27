@@ -18,3 +18,6 @@ What's on each side (each turned so it reads upright when the box is folded):
 
 Uploading: in the Vistaprint designer choose **Upload your design**, pick the PDF, and check that the preview
 lines up with their cut lines. In the 3D preview the front of the closed box should be the red panel. Order **outside print only**.
+
+Final-product pictures (the boxes as customers will get them): `../../mockups/final-classic.png` and
+`../../mockups/final-mini.png`.
